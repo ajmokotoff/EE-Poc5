@@ -1,0 +1,69 @@
+site_name: Amazon EKS Blueprints Patterns
+repo_name: "aws-samples/cdk-eks-blueprints-patterns"
+repo_url: "https://github.com/aws-samples/cdk-eks-blueprints-patterns"
+docs_dir: "docs"
+theme:
+  name: material
+  features:
+    - tabs
+nav:
+  - Overview: 'index.md'
+  - Patterns: 
+    - Generative AI:
+      - Prompt Showcase Pattern: 'patterns/generative-ai/showcase.md'
+    - Observability Patterns:
+      - New Cluster:
+        - AWS Native Observability Pattern: 'patterns/observability/single-new-eks-native.md'
+        - AWS Graviton Observability Pattern: 'patterns/observability/single-new-eks-graviton-opensource-observability.md'
+        - OSS Observability Pattern: 'patterns/observability/single-new-eks-opensource.md'
+        - Fargate Observability Pattern : patterns/observability/single-new-eks-awsnative-fargate-observability.md
+        - Mixed Observability Pattern: patterns/observability/single-new-eks-mixed-observability.md
+        - Multi-Cluster Multi-Region Monitoring : patterns/observability/multi-acc-new-eks-mixed-observability.md
+        - OSS Apiserver Monitoring: patterns/observability/single-new-eks-apiserver-opensource-observability.md
+        - OSS GPU Monitoring: patterns/observability/single-new-eks-gpu-opensource-observability.md
+        - OSS Java Monitoring : patterns/observability/single-new-eks-java-opensource-observability.md
+        - OSS Nginx Monitoring : patterns/observability/single-new-eks-nginx-opensource-observability.md
+      - Existing Cluster:
+        - AWS Native Observability Pattern : patterns/observability/existing-eks-awsnative-observability.md
+        - Mixed Observability Pattern: patterns/observability/existing-eks-mixed-observability.md
+        - OSS Observability Pattern: patterns/observability/existing-eks-opensource-observability.md
+        - OSS Apiserver Monitoring : patterns/observability/existing-eks-apiserver-observability.md
+        - OSS Nginx Monitoring : patterns/observability/existing-eks-nginx-observability.md
+      - Multi Account Observability Pattern: 'patterns/observability/multi-account-monitoring.md'
+    - Security Patterns:
+      - EKS Config Rules: 'patterns/security/eks-config-rules.md'
+      - Encryption At Rest: 'patterns/security/encryption-at-rest.md'
+      - GuardDuty: 'patterns/security/guardduty.md'
+      - Image Scanning: 'patterns/security/image-scanning.md'
+      - SecurityHub: 'patterns/security/securityhub.md'
+    - AWS Batch Pattern: 'patterns/batch.md'
+    - Backstage Pattern: 'patterns/backstage.md'
+    - Customer Network with IPV4 Pattern: 'patterns/custom-networking-with-ipv4.md'
+    - Instana Pattern: 'patterns/instana.md'
+    - Jupyterhub Pattern: 'patterns/jupyterhub.md'
+    - Konveyor Pattern: 'patterns/knoveyor.md'
+    - Kubeflow Pattern: 'patterns/kubeflow.md'
+    - Multi environment Pipeline GitOps pattern Pattern: 'patterns/pipeline-multi-env-gitops.md'
+    - Nginx Pattern: 'patterns/nginx.md'
+    - Secure Ingress and Authentication Pattern: 'patterns/secureingresscognito.md'
+    - Graviton Pattern: 'patterns/graviton.md'
+    - Windows Pattern: 'patterns/windows.md'
+    - gMaestro Pattern: 'patterns/gmaestro.md'
+markdown_extensions:
+  - def_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.emoji
+  - pymdownx.magiclink
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: "¤"
+plugins:
+  - search
+  - external-markdown
